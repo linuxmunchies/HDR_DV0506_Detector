@@ -1,13 +1,14 @@
+
 # HDR Dolby Vision Profile 05 Level 06 Detector
 
 ## Overview
 
-This is a Bash script designed for the automated detection and optional deletion of MKV files encoded with the 'dvhe.05.06' HDR format within a specified directory. This tool is especially useful for managing digital media libraries, ensuring compatibility, and enforcing encoding standards. It has been primarily tested on .mkv files only, but could work on other file types if mediainfo is able to find the correct field.
+This Bash script is designed for the automated detection and optional deletion of MKV files encoded with the 'dvhe.05.06' HDR format within a specified directory. It is particularly useful for managing digital media libraries, ensuring compatibility, and enforcing encoding standards. Although primarily tested on .mkv files, it may work on other file types if `mediainfo` can identify the correct field.
 
 ## Features
 
 - **Automated Detection**: Efficiently scans a specified directory and its subdirectories for MKV files, identifying those with the 'dvhe.05.06' HDR format.
-- **Selective Deletion**: Offers the option to automatically delete identified files, streamlining library management.
+- **Selective Deletion**: Offers the option to automatically delete identified files, with an interactive mode for confirmation and a non-interactive mode for automated workflows.
 - **User-Friendly Interface**: Includes command-line options for help, directory specification, and file deletion control.
 - **Prerequisite Check**: Automatically verifies the presence of necessary utilities (`mediainfo`) before execution.
 
@@ -29,7 +30,7 @@ This is a Bash script designed for the automated detection and optional deletion
 
 - `-h`: Display help information and exit.
 - `-d DIRECTORY`: Specify the directory to scan for MKV files. Defaults to `/mnt/media/movies/`.
-- `-r`: Remove files identified with the 'dvhe.05.06' HDR format. Use with caution.
+- `-r`: Remove files identified with the 'dvhe.05.06' HDR format without asking for confirmation. Use with caution.
 
 ### Examples
 
@@ -45,7 +46,7 @@ This is a Bash script designed for the automated detection and optional deletion
 ./hdr-dv-cleaner.sh -d /path/to/your/movies
 ```
 
-- To scan and remove files:
+- To scan and remove files without confirmation:
 
 ```bash
 ./hdr-dv-cleaner.sh -r
@@ -53,7 +54,8 @@ This is a Bash script designed for the automated detection and optional deletion
 
 ## Contributing
 
-Contributions are welcome. Please feel free to fork the repository, make improvements, and submit pull requests. I am still new so please bear (heh) with me!
+Contributions are welcome. Please feel free to fork the repository, make improvements, and submit pull requests. I am still new, so please bear (heh) with me!
 
 ## License
+
 This project is licensed under the MIT License!
