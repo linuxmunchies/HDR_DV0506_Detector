@@ -20,12 +20,12 @@ This Bash script is designed for the automated detection and optional deletion o
 ## Installation
 
 1. Clone the repository or download the script directly.
-2. Make the script executable with `chmod +x hdr-dv-cleaner.sh`.
+2. Make the script executable with `chmod +x dv0506detect.sh`.
 
 ## Usage
 
 ```bash
-./hdr-dv-cleaner.sh [-h] [-d DIRECTORY] [-r]
+./dv0506detect.sh [-h] [-d DIRECTORY] [-r]
 ```
 
 - `-h`: Display help information and exit.
@@ -37,19 +37,19 @@ This Bash script is designed for the automated detection and optional deletion o
 - To scan the default directory and list files:
 
 ```bash
-./hdr-dv-cleaner.sh
+./dv0506detect.sh
 ```
 
 - To scan a specific directory:
 
 ```bash
-./hdr-dv-cleaner.sh -d /path/to/your/movies
+./dv0506detect.sh -d /path/to/your/movies
 ```
 
 - To scan and remove files without confirmation:
 
 ```bash
-./hdr-dv-cleaner.sh -r
+./dv0506detect.sh -r
 ```
 
 ## Contributing
