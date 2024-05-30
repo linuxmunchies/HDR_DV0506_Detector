@@ -55,7 +55,7 @@ while getopts "hrd:" opt; do
 done
 
 # Enhanced CLI output
-echo "HDR DV0506 Detector By KernelAGI!"
+echo "HDR DV0506 Detector By LinuxMunchies!"
 echo "Scanning directory: $search_dir for MKV files..."
 echo "=================="
 
