@@ -1,5 +1,7 @@
 
 # HDR Dolby Vision Profile 05 Level 06 Detector
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H11MFEZL)
+
 
 ## Overview
 
